@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3: Time Table</title>
+	<style type="text/css">body {margin-top: 0px;margin-left: 0px;}
+
+#page_1 {position:relative; overflow: hidden;margin: 17px 0px 156px 23px;padding: 0px;border: none;width: 1100px;}
+
+
+
+
+
+.ft0{font: bold 17px 'Times New Roman';line-height: 19px;}
+.ft1{font: bold 14px 'Times New Roman';line-height: 17px;}
+.ft2{font: 1px 'Times New Roman';line-height: 1px;}
+.ft3{font: bold 12px 'Times New Roman';line-height: 15px;}
+.ft4{font: bold 13px 'Times New Roman';line-height: 15px;}
+.ft5{font: bold 11px 'Times New Roman';line-height: 13px;}
+.ft6{font: 1px 'Times New Roman';line-height: 5px;}
+.ft7{font: 1px 'Times New Roman';line-height: 11px;}
+.ft8{font: bold 12px 'Times New Roman';line-height: 14px;}
+.ft9{font: 1px 'Times New Roman';line-height: 9px;}
+.ft10{font: 1px 'Times New Roman';line-height: 6px;}
+
+.p0{text-align: left;padding-left: 357px;margin-top: 0px;margin-bottom: 0px;}
+.p1{text-align: left;padding-left: 375px;margin-top: 3px;margin-bottom: 0px;}
+.p2{text-align: left;padding-left: 224px;margin-top: 1px;margin-bottom: 0px;}
+.p3{text-align: left;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p4{text-align: left;padding-left: 1px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p5{text-align: left;padding-left: 3px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p6{text-align: left;padding-left: 2px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p7{text-align: center;padding-left: 2px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p8{text-align: left;padding-left: 19px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p9{text-align: center;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p10{text-align: center;padding-right: 8px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p11{text-align: center;padding-left: 1px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p12{text-align: right;padding-right: 17px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p13{text-align: center;padding-right: 1px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p14{text-align: left;padding-left: 21px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p15{text-align: center;padding-right: 9px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p16{text-align: left;padding-left: 22px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p17{text-align: center;padding-right: 6px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p18{text-align: left;padding-left: 28px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p19{text-align: left;padding-left: 23px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p20{text-align: center;padding-left: 3px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p21{text-align: center;padding-right: 5px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p22{text-align: left;padding-left: 41px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p23{text-align: left;padding-left: 43px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p24{text-align: left;padding-left: 2px;margin-top: 0px;margin-bottom: 0px;}
+
+.td0{padding: 0px;margin: 0px;width: 83px;vertical-align: bottom;}
+.td1{padding: 0px;margin: 0px;width: 100px;vertical-align: bottom;}
+.td2{padding: 0px;margin: 0px;width: 8px;vertical-align: bottom;}
+.td3{padding: 0px;margin: 0px;width: 92px;vertical-align: bottom;}
+.td4{padding: 0px;margin: 0px;width: 304px;vertical-align: bottom;}
+.td5{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 483px;vertical-align: bottom;}
+.td6{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 100px;vertical-align: bottom;}
+.td7{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 213px;vertical-align: bottom;}
+.td8{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 91px;vertical-align: bottom;}
+.td9{border-left: #000000 1px solid;border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 81px;vertical-align: bottom;}
+.td10{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 99px;vertical-align: bottom;}
+.td11{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 8px;vertical-align: bottom;}
+.td12{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 91px;vertical-align: bottom;}
+.td13{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 103px;vertical-align: bottom;}
+.td14{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 9px;vertical-align: bottom;}
+.td15{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 90px;vertical-align: bottom;}
+.td16{border-left: #000000 1px solid;border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 81px;vertical-align: bottom;}
+.td17{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 99px;vertical-align: bottom;}
+.td18{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 91px;vertical-align: bottom;}
+.td19{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 103px;vertical-align: bottom;}
+.td20{padding: 0px;margin: 0px;width: 9px;vertical-align: bottom;}
+.td21{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 90px;vertical-align: bottom;}
+.td22{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 199px;vertical-align: bottom;}
+.td23{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 391px;vertical-align: bottom;}
+.td24{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 92px;vertical-align: bottom;}
+.td25{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 308px;vertical-align: bottom;}
+.td26{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 203px;vertical-align: bottom;}
+.td27{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 208px;vertical-align: bottom;}
+.td28{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 199px;vertical-align: bottom;}
+.td29{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 313px;vertical-align: bottom;}
+
+.tr0{height: 18px;}
+.tr1{height: 17px;}
+.tr2{height: 32px;}
+.tr3{height: 16px;}
+.tr4{height: 34px;}
+.tr5{height: 23px;}
+.tr6{height: 5px;}
+.tr7{height: 11px;}
+.tr8{height: 14px;}
+.tr9{height: 9px;}
+.tr10{height: 33px;}
+.tr11{height: 15px;}
+.tr12{height: 6px;}
+.tr13{height: 35px;}
+
+.t0{width: 987px;margin-top: 17px;font: bold 12px 'Times New Roman';}
+	</style>
+</head>
+<body>
+<h1 align="center">Assignment 3: Time Table</h1>
+<hr>
+<div align="center">
+<TABLE cellpadding=1 cellspacing=1 class="t0">
+<TR>
+	<TD class="tr0 td0"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td1"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td1"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td3"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td3"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td1"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td1"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=4 class="tr0 td4"><P class="p4 ft3">Class Coordinator : Er. Ms. Vedpriya Dongre</P></TD>
+</TR>
+<TR>
+	<TD colspan=7 class="tr0 td5"><P class="p5 ft1">Class & Branch : III Yr. B.E.( Information Technology) Sec. "A"</P></TD>
+	<TD class="tr0 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=3 class="tr0 td7"><P class="p6 ft1">Room No.: <NOBR>F-306</NOBR> As Indicate</P></TD>
+	<TD class="tr0 td8"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td9"><P class="p7 ft1">Day</P></TD>
+	<TD class="tr1 td10"><P class="p8 ft1">8:00 <NOBR>-9:00</NOBR></P></TD>
+	<TD class="tr1 td10"><P class="p9 ft1">9:00 <NOBR>-10:00</NOBR></P></TD>
+	<TD class="tr1 td11"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td12"><P class="p10 ft1">10:00 - 11:00</P></TD>
+	<TD class="tr1 td11"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td12"><P class="p10 ft1">11:00 - 12:00</P></TD>
+	<TD class="tr1 td10"><P class="p11 ft1">12:00 - 1:00</P></TD>
+	<TD class="tr1 td10"><P class="p11 ft4">1:00 - 2:00</P></TD>
+	<TD class="tr1 td13"><P class="p9 ft1">2:00 - 3:00</P></TD>
+	<TD class="tr1 td10"><P class="p9 ft1">3:00 - 4:00</P></TD>
+	<TD class="tr1 td14"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td15"><P class="p12 ft1">4:00 - 5:00</P></TD>
+</TR>
+<TR>
+	<TD rowspan=2 class="tr2 td16"><P class="p7 ft1">Monday</P></TD>
+	<TD class="tr3 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td17"><P class="p13 ft5">SIR5S5</P></TD>
+	<TD class="tr3 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td18"><P class="p14 ft3">ITR5G3</P></TD>
+	<TD class="tr3 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td18"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td17"><P class="p13 ft3">ITR5C2</P></TD>
+	<TD class="tr3 td17"><P class="p7 ft3">ITR5E1</P></TD>
+	<TD class="tr3 td19"><P class="p13 ft3">ITR5C2</P></TD>
+	<TD class="tr3 td17"><P class="p7 ft3">ITR5E1</P></TD>
+	<TD class="tr3 td20"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td21"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr3 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td17"><P class="p13 ft3">VAN</P></TD>
+	<TD class="tr3 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td18"><P class="p15 ft3">RP</P></TD>
+	<TD class="tr3 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td18"><P class="p10 ft4">Break</P></TD>
+	<TD class="tr3 td17"><P class="p9 ft3">VD</P></TD>
+	<TD class="tr3 td17"><P class="p9 ft3">VNP</P></TD>
+	<TD class="tr3 td19"><P class="p9 ft3">VD</P></TD>
+	<TD class="tr3 td17"><P class="p13 ft3">VNP</P></TD>
+	<TD class="tr3 td20"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td21"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr3 td9"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td10"><P class="p13 ft3"><NOBR>F-104</NOBR></P></TD>
+	<TD class="tr3 td11"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td12"><P class="p15 ft3"><NOBR>F-306</NOBR></P></TD>
+	<TD class="tr3 td11"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td12"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td10"><P class="p9 ft3"><NOBR>F-306</NOBR></P></TD>
+	<TD class="tr3 td10"><P class="p9 ft3"><NOBR>F-102</NOBR></P></TD>
+	<TD class="tr3 td13"><P class="p9 ft3"><NOBR>F-306</NOBR> (R)</P></TD>
+	<TD class="tr3 td10"><P class="p13 ft3"><NOBR>F-102</NOBR> (R)</P></TD>
+	<TD class="tr3 td14"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr3 td15"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD rowspan=3 class="tr4 td16"><P class="p7 ft1">Tuesday</P></TD>
+	<TD class="tr0 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td18"><P class="p16 ft3">ITR5C3</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td18"><P class="p17 ft3">ITR5G3</P></TD>
+	<TD class="tr0 td17"><P class="p13 ft3">ITR5C1</P></TD>
+	<TD rowspan=3 class="tr4 td17"><P class="p9 ft4">Break</P></TD>
+	<TD class="tr0 td19"><P class="p7 ft3">ITR5E1</P></TD>
+	<TD colspan=3 rowspan=2 class="tr5 td22"><P class="p18 ft3"><NOBR>ITR5C3/B-204/JR/TAM/B1</NOBR></P></TD>
+</TR>
+<TR>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr3 td18"><P class="p15 ft3">JR</P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr3 td18"><P class="p15 ft3">RP</P></TD>
+	<TD rowspan=2 class="tr3 td17"><P class="p9 ft3">AJ</P></TD>
+	<TD rowspan=2 class="tr3 td19"><P class="p13 ft3">VNP</P></TD>
+</TR>
+<TR>
+	<TD class="tr7 td17"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td17"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td2"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td2"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD colspan=3 rowspan=2 class="tr3 td22"><P class="p19 ft3"><NOBR>ITR5E1 /B-106/VNP/TAV/B2</NOBR></P></TD>
+</TR>
+<TR>
+	<TD class="tr6 td16"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td12"><P class="p15 ft8"><NOBR>F-104</NOBR></P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td12"><P class="p15 ft8"><NOBR>F-306</NOBR></P></TD>
+	<TD rowspan=2 class="tr8 td10"><P class="p9 ft8"><NOBR>F-306</NOBR></P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td13"><P class="p13 ft8"><NOBR>F-103</NOBR></P></TD>
+</TR>
+<TR>
+	<TD class="tr9 td9"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td11"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td11"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td6"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td14"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td15"><P class="p3 ft9">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD rowspan=2 class="tr10 td16"><P class="p7 ft1">Wednesday</P></TD>
+	<TD class="tr0 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td18"><P class="p16 ft3">SIR5S5</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td18"><P class="p17 ft3">ITR5G3</P></TD>
+	<TD rowspan=2 class="tr10 td17"><P class="p9 ft4">Break</P></TD>
+	<TD class="tr0 td17"><P class="p20 ft3">ITR5C3</P></TD>
+	<TD class="tr0 td19"><P class="p13 ft3">ITR5C2</P></TD>
+	<TD class="tr0 td17"><P class="p20 ft3">ITR5C3</P></TD>
+	<TD class="tr0 td20"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td21"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr11 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td18"><P class="p15 ft3">VAN</P></TD>
+	<TD class="tr11 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td18"><P class="p15 ft3">RP</P></TD>
+	<TD class="tr11 td17"><P class="p9 ft3">JR</P></TD>
+	<TD class="tr11 td19"><P class="p9 ft3">VD</P></TD>
+	<TD class="tr11 td17"><P class="p9 ft3">JR</P></TD>
+	<TD class="tr11 td20"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td21"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr11 td9"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td11"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td12"><P class="p15 ft3"><NOBR>F-104</NOBR></P></TD>
+	<TD class="tr11 td11"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td12"><P class="p15 ft3"><NOBR>F-306</NOBR></P></TD>
+	<TD class="tr11 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td10"><P class="p9 ft3"><NOBR>F-104</NOBR></P></TD>
+	<TD class="tr11 td13"><P class="p13 ft3"><NOBR>F-306</NOBR></P></TD>
+	<TD class="tr11 td10"><P class="p13 ft3"><NOBR>F-104(R)</NOBR></P></TD>
+	<TD class="tr11 td14"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr11 td15"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD rowspan=3 class="tr4 td16"><P class="p7 ft1">Thursday</P></TD>
+	<TD class="tr0 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td18"><P class="p16 ft3">ITR5C3</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td18"><P class="p21 ft3">ITR5G3</P></TD>
+	<TD class="tr0 td17"><P class="p13 ft3">ITR5C1</P></TD>
+	<TD rowspan=3 class="tr4 td17"><P class="p9 ft4">Break</P></TD>
+	<TD class="tr0 td19"><P class="p13 ft3">ITR5C2</P></TD>
+	<TD colspan=3 rowspan=2 class="tr5 td22"><P class="p18 ft3"><NOBR>ITR5C3/B-204/JR/TAM/B2</NOBR></P></TD>
+</TR>
+<TR>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr3 td18"><P class="p15 ft3">JR</P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr3 td18"><P class="p15 ft3">RP</P></TD>
+	<TD rowspan=2 class="tr3 td17"><P class="p9 ft3">AJ</P></TD>
+	<TD rowspan=2 class="tr3 td19"><P class="p9 ft3">VD</P></TD>
+</TR>
+<TR>
+	<TD class="tr7 td17"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td17"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td2"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td2"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD colspan=3 rowspan=2 class="tr3 td22"><P class="p18 ft3"><NOBR>ITR5E1 /B-106/PB/TAV/B1</NOBR></P></TD>
+</TR>
+<TR>
+	<TD class="tr6 td16"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td12"><P class="p15 ft8"><NOBR>F-104</NOBR></P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td12"><P class="p15 ft8"><NOBR>F-306</NOBR> (T)</P></TD>
+	<TD rowspan=2 class="tr8 td10"><P class="p9 ft8"><NOBR>F-306</NOBR></P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td13"><P class="p13 ft8"><NOBR>F-306</NOBR></P></TD>
+</TR>
+<TR>
+	<TD class="tr9 td9"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td11"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td11"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td6"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td14"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td15"><P class="p3 ft9">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD rowspan=3 class="tr4 td16"><P class="p7 ft1">Friday</P></TD>
+	<TD class="tr1 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=3 rowspan=2 class="tr5 td22"><P class="p22 ft3"><NOBR>ITR5C2 /B-203/VD/B1</NOBR></P></TD>
+	<TD class="tr1 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td18"><P class="p15 ft3">ITR5C1</P></TD>
+	<TD rowspan=3 class="tr4 td17"><P class="p9 ft4">Break</P></TD>
+	<TD class="tr1 td17"><P class="p7 ft3">ITR5E1</P></TD>
+	<TD class="tr1 td19"><P class="p13 ft3">ITR5C2</P></TD>
+	<TD class="tr1 td17"><P class="p7 ft3">ITR5G3</P></TD>
+	<TD class="tr1 td20"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td21"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr12 td17"><P class="p3 ft10">&nbsp;</P></TD>
+	<TD class="tr12 td2"><P class="p3 ft10">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr1 td18"><P class="p10 ft3">AJ</P></TD>
+	<TD rowspan=2 class="tr1 td17"><P class="p9 ft3">VNP</P></TD>
+	<TD rowspan=2 class="tr1 td19"><P class="p9 ft3">VD</P></TD>
+	<TD rowspan=2 class="tr1 td17"><P class="p13 ft3">RP</P></TD>
+	<TD class="tr12 td20"><P class="p3 ft10">&nbsp;</P></TD>
+	<TD class="tr12 td21"><P class="p3 ft10">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr7 td17"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD colspan=3 rowspan=2 class="tr3 td22"><P class="p23 ft3"><NOBR>ITR5L3/B-103/RY/B2</NOBR></P></TD>
+	<TD class="tr7 td2"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td20"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td21"><P class="p3 ft7">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr6 td16"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td12"><P class="p15 ft8"><NOBR>F-306</NOBR></P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td10"><P class="p9 ft8"><NOBR>F-103</NOBR></P></TD>
+	<TD rowspan=2 class="tr8 td13"><P class="p9 ft8"><NOBR>F-306(T)</NOBR></P></TD>
+	<TD rowspan=2 class="tr8 td10"><P class="p13 ft8"><NOBR>F-306</NOBR> (R)</P></TD>
+	<TD class="tr6 td20"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td21"><P class="p3 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr9 td9"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td6"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td11"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td12"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td11"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td14"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td15"><P class="p3 ft9">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD rowspan=3 class="tr4 td16"><P class="p7 ft1">Saturday</P></TD>
+	<TD class="tr1 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=3 rowspan=2 class="tr5 td22"><P class="p22 ft3"><NOBR>ITR5C2 /B-203/VD/B2</NOBR></P></TD>
+	<TD class="tr1 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td18"><P class="p21 ft3">ITR5C3</P></TD>
+	<TD rowspan=3 class="tr4 td17"><P class="p9 ft4">Break</P></TD>
+	<TD class="tr1 td17"><P class="p7 ft3">ITR5E1</P></TD>
+	<TD class="tr1 td19"><P class="p13 ft3">ITR5C1</P></TD>
+	<TD class="tr1 td17"><P class="p18 ft3">ITR5C1</P></TD>
+	<TD class="tr1 td20"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td21"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr12 td17"><P class="p3 ft10">&nbsp;</P></TD>
+	<TD class="tr12 td2"><P class="p3 ft10">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr1 td18"><P class="p15 ft3">JR</P></TD>
+	<TD rowspan=2 class="tr1 td17"><P class="p9 ft3">VNP</P></TD>
+	<TD rowspan=2 class="tr1 td19"><P class="p9 ft3">AJ</P></TD>
+	<TD rowspan=2 class="tr1 td17"><P class="p9 ft3">AJ</P></TD>
+	<TD class="tr12 td20"><P class="p3 ft10">&nbsp;</P></TD>
+	<TD class="tr12 td21"><P class="p3 ft10">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr7 td17"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD colspan=3 rowspan=2 class="tr3 td22"><P class="p23 ft3"><NOBR>ITR5L3/B-103/RY/B1</NOBR></P></TD>
+	<TD class="tr7 td2"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td20"><P class="p3 ft7">&nbsp;</P></TD>
+	<TD class="tr7 td21"><P class="p3 ft7">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr6 td16"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td2"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td12"><P class="p15 ft8"><NOBR>F-104(T)</NOBR></P></TD>
+	<TD class="tr6 td17"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr8 td10"><P class="p9 ft8"><NOBR>F-102</NOBR> (T)</P></TD>
+	<TD rowspan=2 class="tr8 td13"><P class="p9 ft8"><NOBR>F-306(T)</NOBR></P></TD>
+	<TD rowspan=2 class="tr8 td10"><P class="p13 ft8"><NOBR>F-306(R)</NOBR></P></TD>
+	<TD class="tr6 td20"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr6 td21"><P class="p3 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr9 td9"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td6"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td11"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td12"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td11"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td10"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td14"><P class="p3 ft9">&nbsp;</P></TD>
+	<TD class="tr9 td15"><P class="p3 ft9">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD colspan=6 class="tr13 td23"><P class="p5 ft1">Subjects Code Subjects Name & Marks Scheme</P></TD>
+	<TD class="tr13 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr13 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr13 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=3 class="tr13 td7"><P class="p6 ft1">Keys: Faculty Name</P></TD>
+	<TD class="tr13 td8"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr0 td9"><P class="p5 ft1">1) ITR5C1</P></TD>
+	<TD colspan=5 class="tr0 td25"><P class="p4 ft1">Theory of Computation <NOBR>(L-3,</NOBR> <NOBR>T-1,P-0)</NOBR></P></TD>
+	<TD class="tr0 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=2 class="tr0 td26"><P class="p6 ft1">AJ- Er.Ashish Jain</P></TD>
+	<TD class="tr0 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td14"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td15"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td9"><P class="p5 ft1">2) ITR5C2</P></TD>
+	<TD colspan=5 class="tr1 td25"><P class="p4 ft1">Object Oriented Analysis & Design <NOBR>(L-3,</NOBR> <NOBR>T-1,P-1)</NOBR></P></TD>
+	<TD class="tr1 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=2 class="tr1 td26"><P class="p6 ft1">VD- Er. Ms. Vedpriya Dongre</P></TD>
+	<TD class="tr1 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td14"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td15"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td9"><P class="p5 ft1">3) ITR5C3</P></TD>
+	<TD colspan=5 class="tr1 td25"><P class="p4 ft1">Computer Network <NOBR>(L-3,</NOBR> <NOBR>T-1,P-1)</NOBR></P></TD>
+	<TD class="tr1 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=2 class="tr1 td26"><P class="p6 ft1">JR- Dr. Jagdish Raikwal</P></TD>
+	<TD class="tr1 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td14"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td15"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td9"><P class="p5 ft1">4) ITR5G3</P></TD>
+	<TD colspan=3 class="tr1 td27"><P class="p4 ft1">Applied Statistics <NOBR>(L-3,</NOBR> <NOBR>T-1,P-0)</NOBR></P></TD>
+	<TD class="tr1 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td11"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=2 class="tr1 td26"><P class="p6 ft1">RP- Dr. Rohit Pathak</P></TD>
+	<TD class="tr1 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td14"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td15"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td9"><P class="p5 ft1">5) ITR5E1</P></TD>
+	<TD colspan=3 class="tr1 td27"><P class="p4 ft1">Web Technologies <NOBR>(L-3,</NOBR> <NOBR>T-1,P-1)</NOBR></P></TD>
+	<TD class="tr1 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td11"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=2 class="tr1 td26"><P class="p6 ft1">VNP- Er. Mrs. Nanda Page</P></TD>
+	<TD colspan=3 class="tr1 td28"><P class="p4 ft1">TAV- Er. Aksay Varsheny</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td9"><P class="p5 ft1">6) ITR5L3</P></TD>
+	<TD colspan=5 class="tr1 td25"><P class="p4 ft1">Scripting Language Laboratory <NOBR>(L-0,</NOBR> <NOBR>T-0,P-1)</NOBR></P></TD>
+	<TD class="tr1 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=2 class="tr1 td26"><P class="p6 ft1">RY- Er. Ravindra Yadav</P></TD>
+	<TD colspan=3 class="tr1 td28"><P class="p4 ft1">PB- Dr. Pratosh Bansal</P></TD>
+</TR>
+<TR>
+	<TD class="tr0 td9"><P class="p5 ft1">7) SIR5S5</P></TD>
+	<TD colspan=5 class="tr0 td25"><P class="p4 ft4">Principal of Management <NOBR>(L-2,</NOBR> <NOBR>T-0,P-0)</NOBR></P></TD>
+	<TD class="tr0 td24"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td10"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=2 class="tr0 td26"><P class="p6 ft4">VAN- Mrs. Ankita Neema</P></TD>
+	<TD class="tr0 td6"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td14"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td15"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr0 td0"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td1"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td1"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td3"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td2"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td3"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td17"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=4 class="tr1 td29"><P class="p6 ft1">L- Lecture,T- Tutorial, P- Practical, R- Remedial</P></TD>
+	<TD class="tr1 td15"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+</TABLE>
+</div>
+</body>
+</html>
