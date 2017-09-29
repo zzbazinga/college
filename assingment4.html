@@ -13,8 +13,26 @@ width:100%;
 height:100%;
 z-index:-1;
 }
-body {
-    background: linear-gradient(135deg, red, blue);
+.animate {
+    height: 200px;
+    width: 400px;
+    border: 1px solid #000;
+    -webkit-animation: animate_bg 5s;
+    animation: animate_bg 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate_bg {
+    0%   {background:#EF5350;}
+    50%  {background:#FF1744;}
+    100% {background:#1E88E5;}
+}
+
+@-webkit-keyframes animate_bg {
+    0%   {background:#EF5350;}
+    50%  {background:#FF1744;}
+    100% {background:#1E88E5;}
 }
 h1{
     color:white;
@@ -23,12 +41,11 @@ h2{color:red;}
 h3{color:white;}
 </style>
 </head>
-<body>
+<body class= "animate">
 
 <canvas id="canvas"></canvas>
 <div class="container">
 <div align="center"><h1>Play Video at your OWN RISK</h1>
-	<h2>Song: Electric</h2>
 	</div>
 <div class="row">
 	<div class="col-md-6">
