@@ -63,11 +63,12 @@ h3{color:white;}
 
 
 <script type="text/javascript">
+	var song = "song.mp3"
 document.addEventListener('keydown', function(event) {
     if (event.keyCode == 37) {
-        alert('Background Sound Skipped, go ahead play from anything.');
+       song = "error.dak";
+	    alert('Background Sound Skipped, go ahead play from anything.');
  }
-	else{
 	// create the audio context (chrome only for now)
     // create the audio context (chrome only for now)
     if (! window.AudioContext) {
@@ -97,7 +98,7 @@ document.addEventListener('keydown', function(event) {
 
     // load the sound
     setupAudioNodes();
-    loadSound("song.mp3");
+    loadSound(song);
 
 
     function setupAudioNodes() {
