@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Assignment 4: Audio and Video</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="jquery-1.8.0.min.js"></script>
 <style type="text/css">
     canvas {
@@ -25,16 +26,22 @@ h3{color:white;}
 <body>
 
 <canvas id="canvas"></canvas>
-
+<div class="container">
 <div align="center"><h1>Play Video at your OWN RISK</h1>
 	<h2>Song: Electric</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/frw6uu3nonQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-<h3>But Song is good, no Joke here</h3>
-	<h3>Wait a Minute to load the song</h3>
-	<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/288886125&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	</div>
+<div class="row">
+	<div class="col-md-6">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/frw6uu3nonQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<h3>But Song is good, no Joke here</h3>
+		<h3>Wait a Minute to load the song</h3>
+		</div>
+		<div class="col-md-6">
+		<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/288886125&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 <!--experimenting
 <audio src="https://smp3dl.com/fileDownload/Songs/128/28094.mp3" controls autoplay loop>
 </audio>-->
+</div>
 </div>
 
 
