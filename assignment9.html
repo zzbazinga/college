@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 9: Live Digital Clock</title>
+	<style type="text/css">
+		.clock{
+			text-align: center;
+			font-size: 100px;
+			font-family: "Courier New", "Lucida Console", "Monospce";
+		}
+	</style>
+</head>
+<body onload="startTime()">
+<header>
+ <h2 align="center">Live Digital Clock Using JavaScript</h2>
+	<hr>
+	</header>
+
+<div class="clock" id="txt">
+
+</div>
+
+<script type="text/javascript">
+		function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+	</script>
+</body>
+</html>

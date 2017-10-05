@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 8: Form Validation Using JavaScript</title>
+	<script>
+function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    var y = document.forms["myForm"]["class"].value;
+    var z = document.forms["myForm"]["mobile"].value;
+    var z1 = document.forms["myForm"]["rollno"].value;
+    if (x == "") {
+        alert("Enter your name.");
+        return false;
+    }
+    if (y == "") {
+    	alert("Enter your Stream.")
+    	return false;
+    }
+    if (z== "") {
+    	alert("Enter your Mobile Number.");
+    }
+    if(z1=''){
+    	alert("Enter your Roll No.");
+    	return false;
+    }
+}
+</script>
+</head>
+<body>
+<h2 align="center">checks empty values in form Using JavaScript.</h2>
+<hr>
+<div align="center">
+<form name="myForm" onsubmit="return validateForm()">
+Name: <input type="text" name="name"><br>
+Stream: <input type="text" name="class"><br>
+Mobile: <input type="text" name="mobile"><br>
+Roll No.: <input type="text" name="rollno"><br>
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>

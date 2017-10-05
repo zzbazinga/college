@@ -1,0 +1,37 @@
+<!--. Create javaScript program to print multiplication table using InnerHTML-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 7: JavaScript Program</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+</head>
+<body>
+<h1 align="center">Assignment 7: Print Multiplication Table</h1>
+<hr>
+<div align="center">
+Enter number to get it's Multiplication Table: <input type="text" id="num" max="10" min="1">
+
+<input type="submit" value="Submit" onclick="multiplicationtable()"></div>
+<br>
+<div id="out" align="center"></div>
+
+<script type="text/javascript" >  
+function multiplicationtable() {  
+var num = document.getElementById("num").value;  
+ var no = parseInt(num);
+ var table="";
+ var i;
+ for (i = 1; i <100; i++) {
+
+ 	table += (no +" X " +i +" = " +no*i + "<br>"); 
+ }
+
+ 	document.getElementById('out').innerHTML=table;  
+ 
+ }  
+  </script>  
+
+</body>
+</html>
+
